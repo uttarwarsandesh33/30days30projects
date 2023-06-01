@@ -44,6 +44,7 @@ h2 {
 }
 
 .card {
+  position: relative;
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -78,6 +79,23 @@ h2 {
 
 .card a:hover {
   background-color: #0097a7;
+}
+
+.card div.tag {
+  display: inline-block;
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.card a.tag:hover {
+  background-color: #333333; /* Darker background color on hover */
 }
 
 footer {

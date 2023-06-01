@@ -1,0 +1,44 @@
+/* styles.css */
+body {
+  background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  color: #33006f;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #33006f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.info-card {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #33006f;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  color: #fff;
+}
+
+.hide {
+  display: none;
+}

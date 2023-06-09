@@ -5,23 +5,20 @@ var flexContainer = document.querySelector(".flex-container");
 var flexItems = document.querySelectorAll(".flex-item");
 
 justifyContentSelect.addEventListener("change", function() {
-  var value = this.value;
-  flexContainer.style.justifyContent = value;
+  flexContainer.style.justifyContent = this.value;
 });
 
 alignItemsSelect.addEventListener("change", function() {
-  var value = this.value;
-  flexContainer.style.alignItems = value;
+  flexContainer.style.alignItems = this.value;
 });
 
 flexDirectionSelect.addEventListener("change", function() {
-  var value = this.value;
-  flexContainer.style.flexDirection = value;
+  flexContainer.style.flexDirection = this.value;
 });
 
 flexItems.forEach(function(item) {
   item.addEventListener("transitionend", function() {
-    this.style.transition = "";
+    this.style.transition = "all 0.3s easein";
   });
 });
 

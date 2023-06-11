@@ -1,5 +1,7 @@
     const cells = document.querySelectorAll('.cell');
-    let currentPlayer = 'X';
+    const resetButton = document.querySelector('.resetbutton');
+    const playerTurnDisplay = document.getElementById('playerturn');
+    let currentPlayer = '😁';
     let gameActive = true;
 
     function handleCellClick(e) {
@@ -20,7 +22,8 @@
         return;
       }
 
-      currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+      currentPlayer = currentPlayer === '😁' ? '😉' : '😁';
+      playerTurnDisplay.textContent = currentPlayer;
     }
 
     function checkWin(symbol) {
@@ -43,9 +46,18 @@
       gameActive = false;
       if (draw) {
         alert("It's a draw!");
+        resetGame();
       } else {
         alert(`Player ${currentPlayer} wins!`);
+        resetGame();
       }
     }
 
+    function resetGame() {
+      cells.forEach(cell => (cell.textContent = ''));
+      currentPlayer = '😁';
+      gameActive = true;
+    }
+
     cells.forEach(cell => cell.addEventListener('click', handleCellClick));
+    resetButton.addEventListener('click', resetGame);

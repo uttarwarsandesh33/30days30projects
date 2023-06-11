@@ -1,0 +1,39 @@
+/* 
+    @author: Thomas Bansod
+    github: https://github.com/ThomasB98
+*/
+body{
+    background: linear-gradient(to right, rgb(4, 167, 140) ,rgb(93, 197, 135));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+    flex: wrap;
+}
+
+.outer-div{
+    display: center;
+    justify-content: center;
+    height: 250px;
+    width: 250px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgb(0, 0, 0);
+}
+
+.inner{
+    height: 83px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.cell{
+    border: 1px solid black;
+    height: 83px;
+    width: 82px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

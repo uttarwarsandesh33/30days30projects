@@ -56,6 +56,7 @@
     function resetGame() {
       cells.forEach(cell => (cell.textContent = ''));
       currentPlayer = '😁';
+      playerTurnDisplay.textContent = currentPlayer;
       gameActive = true;
     }
 

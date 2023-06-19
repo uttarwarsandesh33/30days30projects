@@ -1,0 +1,56 @@
+/* 
+    @author: Thomas Bansod
+    github: https://github.com/ThomasB98
+*/
+body{
+    background: linear-gradient(to right, #ff9900, #ff3300);
+    margin-top: 10%;
+}
+
+.flex-container {
+    display: flex;
+    border: 1px ;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    height: 200px;
+    transition: all 0.3s ease;
+  }
+  
+  .flex-item {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+
+
+  .properties{
+    display: flex;
+    row-gap: 25px;
+    flex-direction: column;
+  }
+  
+  .flex-properties {
+    margin-top: 20px;
+  }
+  
+  label {
+    margin-right: 10px;
+    display: inline-block;
+    font-weight: bold;
+  }
+  
+  select {
+    width: 15%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }

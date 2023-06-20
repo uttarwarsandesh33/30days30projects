@@ -41,12 +41,10 @@ body{
   
   label {
     margin-right: 10px;
-    display: inline-block;
     font-weight: bold;
   }
   
   select {
-    width: 15%;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;

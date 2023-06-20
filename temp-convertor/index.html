@@ -13,26 +13,30 @@
       <div class="container">
         <h2>Temperature Convertor</h2>
 
-        <div class="degrees font-style">
-          <label class="label-text">Degrees</label>
-          <input
-            type="number"
-            name="temperature"
-            id="temperature"
-            placeholder="0"
-          />
-          <label class="label-text">Type</label>
-          <select name="temp-diff" id="temp-diff" class="font-style">
-            <option value="cel">Celcious</option>
-            <option value="feh">Fehrenheit</option>
-          </select>
+        <div class="degrees">
+          <div class="input-container">
+            <label class="label-text">Degrees</label>
+            <input
+              type="number"
+              name="temperature"
+              id="temperature"
+              placeholder="0"
+            />
+          </div>
+          <div class="type-container">
+            <label class="label-text">Type</label>
+            <select name="temp-diff" id="temp-diff">
+              <option value="cel">Celcious</option>
+              <option value="feh">Fehrenheit</option>
+            </select>
+          </div>
         </div>
 
         <br />
         <div class="btn">
           <button id="btn" onclick="calculate()">Convert</button>
         </div>
-        <div class="result font-style">
+        <div class="result">
           <label class="label-text">Result</label>
           <p id="result-contain"></p>
         </div>

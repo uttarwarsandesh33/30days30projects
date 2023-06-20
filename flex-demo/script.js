@@ -1,8 +1,8 @@
-var justifyContentSelect = document.getElementById("justify-content");
-var alignItemsSelect = document.getElementById("align-items");
-var flexDirectionSelect = document.getElementById("flex-direction");
-var flexContainer = document.querySelector(".flex-container");
-var flexItems = document.querySelectorAll(".flex-item");
+const justifyContentSelect = document.getElementById("justify-content");
+const alignItemsSelect = document.getElementById("align-items");
+const flexDirectionSelect = document.getElementById("flex-direction");
+const flexContainer = document.querySelector(".flex-container");
+const flexItems = document.querySelectorAll(".flex-item");
 
 justifyContentSelect.addEventListener("change", function() {
   flexContainer.style.justifyContent = this.value;
